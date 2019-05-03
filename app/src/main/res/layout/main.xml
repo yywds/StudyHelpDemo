@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/yyw"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:alpha="0.3"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/color"
+        android:layout_width="350dp"
+        android:layout_height="500dp" />
+    <TextView
+        android:paddingTop="200dp"
+        android:layout_above="@+id/edit"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:text="         使用说明：1.输入时间（提示：1=1分钟）\n                             2.点击开启学霸模式"
+        android:layout_width="300dp"
+        android:layout_height="500dp" />
+    <EditText
+
+
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:shadowColor="#fff"
+        android:textCursorDrawable="@drawable/hint"
+        android:textColorLink="#fff"
+        android:hint=" 请输入时间！"
+        android:id="@+id/edit"
+        android:layout_above="@id/btn"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="124dp"
+        android:layout_height="50dp" />
+<Button
+    android:paddingTop="40dp"
+    android:textColor="#fff"
+    android:textSize="25dp"
+    android:id="@+id/btn"
+    android:text="争分夺秒!"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:layout_width="400dp"
+    android:layout_height="80dp" />
+    <TextView
+        android:paddingBottom="20dp"
+        android:textColor="#fff"
+        android:id="@+id/text2"
+        android:textSize="25dp"
+        android:layout_below="@id/btn"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+<TextView
+
+    android:paddingTop="20dp"
+    android:textColor="#fff"
+    android:id="@+id/text"
+    android:textSize="25dp"
+    android:layout_below="@id/text2"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:text=""
+    android:layout_width="match_parent"
+    android:layout_height="80dp" />
+
+
+    <Button
+        android:background="@drawable/button"
+        android:textSize="25dp"
+        android:id="@+id/btn2"
+        android:text="开启学霸模式"
+        android:textColor="#fff"
+        android:layout_below="@+id/text"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@drawable/button"
+        android:textSize="25dp"
+        android:id="@+id/btn3"
+        android:text="退出"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
